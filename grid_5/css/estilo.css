@@ -1,0 +1,35 @@
+body {
+    margin: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.grid_cont {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+header {
+    background-color: blue;
+
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+
+aside {
+    background-color: red;
+
+    grid-area: 2 / 1 / 6 / 2;
+
+}
+
+main {
+    background-color: yellow;
+
+    grid-area: 2 / 2 / 6 / 6;
+}

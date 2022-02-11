@@ -1,0 +1,26 @@
+body {
+    margin: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.grid_cont {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px 1px;
+}
+
+aside {
+    background-color: green;
+
+    grid-area: 1 / 1 / 6 / 2;
+
+}
+
+main {
+    background-color: blue;
+
+    grid-area: 1 / 2 / 6 / 6;;
+}
